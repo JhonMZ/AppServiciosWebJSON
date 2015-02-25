@@ -100,7 +100,7 @@ public class MyActivity extends Activity {
             productofinal = new String[productos.size()];
 
             for (int i = 0; i < productos.size(); i++){
-                productofinal[i] = productos.get(i).getCodigo()+"\n"+productos.get(i).getNombre()+"\n"+productos.get(i).getPrecio()+"/n"+productos.get(i).getImagen();
+                productofinal[i] = "Id: "+productos.get(i).getCodigo()+"\n \n Nombre: "+productos.get(i).getNombre()+"\n \n Precio: "+productos.get(i).getPrecio()+"\n \n Imagen: "+productos.get(i).getImagen();
             }
 
             ArrayAdapter<String> adapter = new ArrayAdapter<String>(MyActivity.this,android.R.layout.simple_list_item_1,productofinal);
